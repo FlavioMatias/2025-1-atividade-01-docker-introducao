@@ -1,5 +1,5 @@
-FROM python:alpine
+FROM python:3.9-slim
 
-COPY App.py App.py
+COPY app.py /app.py
 
-CMD ["python", "App.py"]
+CMD ["python", "/app.py"]
